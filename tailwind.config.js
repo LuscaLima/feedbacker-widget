@@ -14,8 +14,11 @@ module.exports = {
           800: '#003840',
           900: '#00262a'
         }
+      },
+      borderRadius: {
+        md: '4px'
       }
     }
   },
-  plugins: []
+  plugins: [require('tailwind-scrollbar')]
 }
