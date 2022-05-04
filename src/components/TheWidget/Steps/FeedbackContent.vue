@@ -9,10 +9,10 @@ import {
 
 const emits = defineEmits<{ (e: 'sent'): void }>()
 const state = reactive({
-  feeback: '',
+  feedback: '',
   screenshot: ''
 })
-const hasFeedback = computed(() => !!state.feeback)
+const hasFeedback = computed(() => !!state.feedback)
 const backgroundScreenshot = computed(
   () => `url(${state.screenshot}) center center`
 )
@@ -30,7 +30,7 @@ function handleSubmit() {
 <template>
   <form class="w-full py-5" @submit.prevent="handleSubmit">
     <textarea
-      v-model="state.feeback"
+      v-model="state.feedback"
       class="min-w-[304px] w-full h-28 text-sm p-2 placeholder-zinc-400 text-zinc-100 bg-transparent border-2 border-zinc-600 rounded-md resize-none transition-colors duration-500 focus:border-brand-400 focus:outline-none scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin"
       placeholder="Tell in detail what's going on..."
     />
