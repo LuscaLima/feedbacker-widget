@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TheWidget from './components/TheWidget.vue'
+import TheWidget from './components/TheWidget/index.vue'
 </script>
 
 <template>

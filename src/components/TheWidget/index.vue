@@ -1,16 +1,17 @@
 <script setup lang="ts">
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { PhChatTeardropDots } from 'phosphor-vue'
+import WidgetContent from './WidgetContent.vue'
 </script>
 
 <template>
-  <Popover class="absolute bottom-5 right-5">
+  <Popover class="flex flex-col items-end gap-1 absolute bottom-5 right-5">
     <PopoverPanel>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <WidgetContent />
     </PopoverPanel>
 
     <PopoverButton
-      class="flex items-center px-3 h-12 text-white bg-brand-400 rounded-full hover:bg-brand-300 group transition-all duration-500 ease-linear"
+      class="flex items-center px-3 h-12 text-white bg-brand-400 rounded-3xl rounded-tr-md group transition-all duration-500 ease-linear hover:bg-brand-300"
     >
       <PhChatTeardropDots class="w-6 h-6" />
       <span
